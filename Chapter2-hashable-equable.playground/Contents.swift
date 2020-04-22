@@ -48,3 +48,11 @@ if tappedPoints1.contains(nextTap1) {
     print("New tap detected at (\(nextTap1.x), \(nextTap1.y)).")
 }
 
+// Chỉ có Hashable có thể làm key trong Dictionary và dùng trong Set
+
+let nextTap2 = GridPoint1(x: 0, y: 1)
+let nextTap3 = GridPoint1(x: 0, y: 1)
+
+let swiftArticlesSet: Set = [nextTap2, nextTap3]
+let swiftArticlesDictionary = [nextTap2: "Swift 3.1", nextTap3: "Swift 4.1"]
+
